@@ -159,7 +159,7 @@
                     <!-- Card flutuante -->
                     <div class="absolute bottom-8 right-[-1rem] z-20 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 animate-float max-w-[200px]">
                         <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-2">Franquia Média</p>
-                        <p class="text-xl font-bold text-red-500 line-through mb-1">R$ 5.000,00</p>
+                        <p class="text-xl font-bold text-red-500 line-through mb-1">R$ 3.500,00</p>
                         <div class="h-px bg-gray-200 my-2"></div>
                         <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">Com LDF</p>
                         <p class="text-xl font-bold text-green-600">Reembolso Total</p>
@@ -332,71 +332,71 @@
     </section>
 
     <!-- Financial Impact -->
-    <section class="py-20 bg-gray-900">
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                        <i class="fas fa-chart-line mr-2"></i>Economia Real
-                    </span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                        Compare e comprove
-                    </h2>
-                    <p class="text-xl text-gray-400 mb-8">
-                        Veja a diferença entre pagar a franquia do próprio bolso e ter o LDF.
-                    </p>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-gray-800 rounded-xl p-6">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-400">Franquia média de seguro</span>
-                                <span class="text-red-400 font-bold text-xl">R$ 3.500</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-3">
-                                <div class="bg-red-500 h-3 rounded-full" style="width: 100%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-gray-800 rounded-xl p-6">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-gray-400">Plano LDF (a partir de)</span>
-                                <span class="text-green-400 font-bold text-xl">R$ 18,90/mês</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-3">
-                                <div class="bg-green-500 h-3 rounded-full" style="width: 6%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-gradient-to-r from-green-900/50 to-green-800/50 border border-green-500/30 rounded-xl p-6">
-                            <div class="flex justify-between items-center">
-                                <span class="text-green-300 font-medium">Sua economia</span>
-                                <span class="text-green-400 font-bold text-2xl">Até R$ 3.500</span>
-                            </div>
-                            <p class="text-green-400/70 text-sm mt-2">
-                                <i class="fas fa-arrow-up mr-1"></i>Valor que você deixa de pagar em caso de sinistro
-                            </p>
-                        </div>
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-chart-line mr-2"></i>Economia Real
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Compare e comprove
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Por poucos reais por mês, você evita um rombo de milhares no seu bolso.
+                </p>
+            </div>
+            
+            <!-- Tabela de comparação -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden max-w-4xl mx-auto">
+                <!-- Cabeçalho da tabela -->
+                <div class="grid grid-cols-3 bg-gray-50 border-b border-gray-200">
+                    <div class="px-6 py-4 text-sm font-semibold text-gray-700">Situação</div>
+                    <div class="px-6 py-4 text-sm font-semibold text-gray-700 flex items-center"><i class="fas fa-times text-red-500 mr-2"></i>Sem LDF</div>
+                    <div class="px-6 py-4 text-sm font-semibold text-gray-700 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Com LDF</div>
+                </div>
+                
+                <!-- Linha 1 -->
+                <div class="grid grid-cols-3 border-b border-gray-100 hover:bg-gray-50 transition">
+                    <div class="px-6 py-5 font-semibold text-gray-900">Batida leve</div>
+                    <div class="px-6 py-5">
+                        <p class="text-gray-600">Franquia de R$ 4.000</p>
+                        <p class="text-red-500 font-semibold">R$ 4.000,00 do seu bolso</p>
+                    </div>
+                    <div class="px-6 py-5">
+                        <p class="text-green-600 font-semibold">Reembolso até o limite</p>
                     </div>
                 </div>
                 
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-8 text-center">
-                        <div class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-piggy-bank text-4xl text-accent-400"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Proteção que cabe no bolso</h3>
-                        <p class="text-gray-300 mb-6">A partir de</p>
-                        <div class="mb-6">
-                            <span class="text-5xl font-bold text-white">R$ 18,90</span>
-                            <span class="text-xl text-gray-300">/mês</span>
-                        </div>
-                        <a href="#planos" class="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-gray-900 px-8 py-4 rounded-full font-bold transition w-full">
-                            Ver Todos os Planos
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                <!-- Linha 2 -->
+                <div class="grid grid-cols-3 border-b border-gray-100 hover:bg-gray-50 transition">
+                    <div class="px-6 py-5 font-semibold text-gray-900">Colisão média</div>
+                    <div class="px-6 py-5">
+                        <p class="text-gray-600">Franquia de R$ 6.500</p>
+                        <p class="text-red-500 font-semibold">R$ 6.500,00 do seu bolso</p>
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-500/20 rounded-full blur-2xl"></div>
+                    <div class="px-6 py-5">
+                        <p class="text-green-600 font-semibold">Reembolso até o limite</p>
+                    </div>
                 </div>
+                
+                <!-- Linha 3 -->
+                <div class="grid grid-cols-3 hover:bg-gray-50 transition">
+                    <div class="px-6 py-5 font-semibold text-gray-900">Acidente maior</div>
+                    <div class="px-6 py-5">
+                        <p class="text-gray-600">Franquia de R$ 10.000</p>
+                        <p class="text-red-500 font-semibold">R$ 10.000,00 do seu bolso</p>
+                    </div>
+                    <div class="px-6 py-5">
+                        <p class="text-green-600 font-semibold">Reembolso até o limite</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rodapé da tabela -->
+            <div class="text-center mt-8">
+                <p class="text-xl text-gray-900">
+                    Investimento mensal a partir de <span class="text-primary-600 font-bold">R$ 41,90</span>
+                </p>
             </div>
         </div>
     </section>
@@ -634,24 +634,42 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 gradient-cta">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                Você está pronto para não se preocupar mais com a 
-                <span class="text-accent-400">franquia</span>?
-            </h2>
-            <p class="text-xl text-gray-300 mb-8">
-                Escolha seu plano e comece a dirigir com mais tranquilidade.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#planos" class="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl">
-                    <i class="fas fa-shield-halved mr-2"></i>
-                    Contratar Agora
-                </a>
-                <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Livre de Franquia" target="_blank" class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold transition">
-                    <i class="fab fa-whatsapp mr-2"></i>
-                    Falar com Consultor
-                </a>
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Texto -->
+                <div class="text-white">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                        Hoje você pode escolher: esperar o próximo susto ou 
+                        <span class="text-primary-400">dirigir em paz</span>
+                    </h2>
+                    <p class="text-xl text-gray-400 mb-8">
+                        Junte-se a milhares de motoristas que já descobriram como é bom não se preocupar com a franquia.
+                    </p>
+                    
+                    <!-- Badges -->
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
+                            <i class="fas fa-check text-green-400 mr-2"></i>Reembolso em até 7 dias
+                        </span>
+                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
+                            <i class="fas fa-check text-green-400 mr-2"></i>Sem carência
+                        </span>
+                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
+                            <i class="fas fa-check text-green-400 mr-2"></i>Sorteios mensais
+                        </span>
+                    </div>
+                    
+                    <a href="#planos" class="inline-flex items-center justify-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition shadow-xl">
+                        Quero dirigir sem medo
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Imagem -->
+                <div class="relative hidden lg:flex justify-center">
+                    <img src="assets/Gemini_Generated_Image_5o48yc5o48yc5o48(1).jpg" alt="App de seguro" class="rounded-3xl shadow-2xl max-w-md w-full object-cover">
+                </div>
             </div>
         </div>
     </section>
