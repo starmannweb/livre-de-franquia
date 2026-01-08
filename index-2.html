@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/ldf-logo-color.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livre de Franquia | Reembolso 100% da Franquia do Seguro</title>
+    <meta name="description"
+        content="Com o LDF você recebe 100% da franquia do seguro automotivo de volta em até 7 dias. Proteção financeira com indenização de R$ 20.000 e sorteios mensais." />
+    <meta name="author" content="Livre de Franquia" />
+    <meta name="keywords"
+        content="franquia seguro, reembolso franquia, proteção veicular, seguro carro, livre de franquia, LDF" />
+
+    <meta property="og:title" content="Livre de Franquia | Zere a Franquia do Seu Seguro" />
+    <meta property="og:description"
+        content="Reembolso de 100% da franquia em até 7 dias. Proteção financeira completa para seu veículo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og-preview.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Livre de Franquia | Proteção Financeira" />
+    <meta name="twitter:description" content="Não pague franquia do próprio bolso. Reembolso à vista em até 7 dias." />
+    <meta name="twitter:image" content="./assets/og-preview.png" />
+
+    <link rel="canonical" href="https://livredefranquia.com.br" />
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',     /* Vibrant Blue */
+                        secondary: '#1E293B',   /* Slate 800 */
+                        background: '#FAFAFA',  /* Off-white */
+                        foreground: '#0F172A',  /* Slate 900 */
+                        gold: '#2563EB',        /* Mapping old 'gold' uses to Blue */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Sora', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to bottom, #FFFFFF, #EFF6FF)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="min-h-screen bg-background text-foreground font-sans">
+            <!-- Navbar -->
+            <nav class="py-6 px-6 container mx-auto flex justify-between items-center relative z-20">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="bg-primary text-white font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl">
+                        LF</div>
+                    <span class="font-bold text-xl tracking-tight">Livre de Franquia</span>
+                </div>
+                <div class="hidden md:flex gap-8 text-sm font-medium text-muted-foreground">
+                    <a href="#como-funciona" class="hover:text-primary transition-colors">Como funciona</a>
+                    <a href="#beneficios" class="hover:text-primary transition-colors">Benefícios</a>
+                    <a href="#planos" class="hover:text-primary transition-colors">Planos</a>
+                    <a href="#faq" class="hover:text-primary transition-colors">Dúvidas</a>
+                </div>
+                <button
+                    class="hidden md:block bg-primary text-white px-5 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all text-sm">
+                    Quero dirigir sem medo
+                </button>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="relative pt-10 pb-20 px-6 bg-hero-gradient overflow-hidden">
+                <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+                    <div class="text-left animate-fade-in-up">
+                        <span
+                            class="inline-block py-1.5 px-4 rounded-full bg-blue-50 text-primary text-sm font-bold tracking-wide mb-6 border border-blue-100">
+                            <i class="fas fa-shield-alt mr-2"></i> Proteção Financeira Completa
+                        </span>
+                        <h1
+                            class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-foreground tracking-tight leading-[1.1]">
+                            Quando a batida acontece,<br>
+                            <span class="text-primary relative inline-block">
+                                a segunda pancada
+                                <svg class="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10"
+                                    viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" />
+                                </svg>
+                            </span>
+                            é no bolso.
+                        </h1>
+                        <p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
+                            Com o Livre de Franquia, você elimina a franquia e recebe o valor de volta à vista em até 7
+                            dias. Garantido pela SURA.
+                        </p>
+                        <ul class="mb-8 space-y-3">
+                            <li class="flex items-center gap-3 text-muted-foreground"><i
+                                    class="fas fa-check-circle text-green-500"></i> Reembolso de 100% da franquia</li>
+                            <li class="flex items-center gap-3 text-muted-foreground"><i
+                                    class="fas fa-check-circle text-green-500"></i> Indenização de R$ 20.000 por morte
+                                acidental</li>
+                            <li class="flex items-center gap-3 text-muted-foreground"><i
+                                    class="fas fa-check-circle text-green-500"></i> Sorteios mensais de R$ 10.000</li>
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button
+                                class="bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-blue-500/20 hover:opacity-90 hover:scale-[1.02] transition-all text-lg w-full sm:w-auto text-center">
+                                NÃO QUERO PAGAR FRANQUIA
+                            </button>
+                            <button
+                                class="bg-white border-2 border-slate-200 text-foreground px-8 py-4 rounded-2xl font-bold hover:border-primary hover:text-primary transition-all text-lg w-full sm:w-auto">
+                                Ver planos
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="relative hidden md:block">
+                        <div
+                            class="absolute inset-0 bg-blue-500/5 blur-3xl rounded-full transform translate-x-12 translate-y-12">
+                        </div>
+                        <img src="./assets/hero-car-repair.jpg" alt="Carro sendo reparado em oficina"
+                            class="relative z-10 rounded-[2.5rem] shadow-2xl w-full object-cover h-[600px] transform hover:scale-[1.01] transition-transform duration-500">
+                        <div
+                            class="absolute bottom-12 right-[-1rem] z-20 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 animate-bounce-slow max-w-[200px]">
+                            <p class="text-xs text-muted-foreground font-semibold uppercase tracking-wider mb-2">
+                                Franquia Média</p>
+                            <p class="text-xl font-bold text-red-500 line-through mb-1">R$ 5.000,00</p>
+                            <div class="h-px bg-slate-100 my-2"></div>
+                            <p class="text-xs text-muted-foreground font-semibold uppercase tracking-wider mb-1">Com LDF
+                            </p>
+                            <p class="text-xl font-bold text-green-600">Reembolso Total</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reality Check Section (New) -->
+            <section class="py-20 px-6 bg-slate-50">
+                <div class="container mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Todo motorista já viveu isso.
+                        </h2>
+                        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Acidentes acontecem quando menos esperamos,
+                            e o custo da franquia sempre surpreende.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div
+                            class="bg-white p-8 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                            <div
+                                class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-slate-900">A batida na garagem</h3>
+                            <p class="text-slate-500">Aquele "raladinho" no pilar. O conserto custa R$ 2.500, mas sua
+                                franquia é R$ 3.000. Você paga tudo do bolso.</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-xl transition-all transform md:-translate-y-4">
+                            <div
+                                class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                                <i class="fas fa-car-crash"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-slate-900">Batida leve no trânsito</h3>
+                            <p class="text-slate-500">Um descuido no sinal. Conserto: R$ 3.800. Franquia: R$ 4.000. Mais
+                                uma vez, o seguro não cobre nada.</p>
+                        </div>
+                        <div
+                            class="bg-white p-8 rounded-[2rem] shadow-lg border border-slate-100 hover:shadow-xl transition-all">
+                            <div
+                                class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-slate-900">O imprevisto noturno</h3>
+                            <p class="text-slate-500">Pneu furado ou guincho de madrugada. Além do susto, custos
+                                inesperados que desequilibram o orçamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How it Works (Existing) -->
+            <section id="como-funciona" class="py-24 px-6 bg-white relative">
+                <div class="container mx-auto">
+                    <div class="text-center mb-20">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Como Funciona</h2>
+                        <p class="text-xl text-slate-500 max-w-2xl mx-auto">Sem letras miúdas. Você bateu, pagou a
+                            franquia, nós reembolsamos.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        <div
+                            class="group p-8 rounded-[2rem] bg-slate-50 hover:bg-white border border-transparent hover:border-slate-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300">
+                            <div
+                                class="w-20 h-20 bg-white text-blue-600 rounded-3xl flex items-center justify-center mb-8 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-slate-900">1. Você contrata</h3>
+                            <p class="text-slate-500 leading-relaxed">Escolha o plano ideal para o valor da sua
+                                franquia. Contratação 100% online.</p>
+                        </div>
+                        <div
+                            class="group p-8 rounded-[2rem] bg-slate-50 hover:bg-white border border-transparent hover:border-slate-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 relative">
+                            <div class="hidden md:block absolute top-1/2 -right-6 w-12 h-1 bg-slate-200 z-0"></div>
+                            <div
+                                class="w-20 h-20 bg-white text-blue-600 rounded-3xl flex items-center justify-center mb-8 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-car-crash"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-slate-900">2. Acontece um sinistro</h3>
+                            <p class="text-slate-500 leading-relaxed">Acione seu seguro auto normalmente. Pague a
+                                franquia para a oficina e pegue o comprovante.</p>
+                        </div>
+                        <div
+                            class="group p-8 rounded-[2rem] bg-slate-50 hover:bg-white border border-transparent hover:border-slate-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300">
+                            <div
+                                class="w-20 h-20 bg-blue-600 text-white rounded-3xl flex items-center justify-center mb-8 text-3xl shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-slate-900">3. Receba o reembolso</h3>
+                            <p class="text-slate-500 leading-relaxed">Envie o comprovante. Em até 7 dias úteis, o valor
+                                volta para sua conta.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits (Updated) -->
+            <section id="beneficios" class="py-24 px-6 bg-slate-50">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-extrabold text-center mb-16 text-slate-900">O que está incluso no LDF</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-slate-900">Quitação de Franquia</h3>
+                                <p class="text-slate-500">Reembolso de 100% da franquia do seu seguro, respeitando o
+                                    limite do plano contratado (até R$ 10.000).</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-slate-900">Sorteios Mensais</h3>
+                                <p class="text-slate-500">Concorra a R$ 10.000,00 todos os meses pela Loteria Federal.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-slate-900">Morte Acidental</h3>
+                                <p class="text-slate-500">Indenização de R$ 20.000,00 para beneficiários em caso de
+                                    morte acidental no trânsito.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 flex items-start gap-6">
+                            <div
+                                class="w-16 h-16 bg-blue-100 text-primary rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                                <i class="fas fa-motorcycle"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3 text-slate-900">Para todos os veículos</h3>
+                                <p class="text-slate-500">Cobertura para carros, motos, táxis e motoristas de
+                                    aplicativo. Uso particular ou profissional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Plans (New) -->
+            <section id="planos" class="py-24 px-6 bg-white">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-extrabold text-center mb-6 text-slate-900">Escolha seu plano</h2>
+                    <p class="text-center text-slate-500 mb-16 text-lg">Proteção completa pelo preço de um lanche.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Plan 1 -->
+                        <div
+                            class="border border-slate-200 rounded-[2rem] p-8 hover:shadow-2xl hover:border-blue-500 transition-all bg-white flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Essencial</h3>
+                            <p class="text-sm text-slate-500 mb-6">Para franquias leves.</p>
+                            <div class="text-4xl font-extrabold text-primary mb-1">R$ 19,90<span
+                                    class="text-base font-normal text-muted-foreground">/mês</span></div>
+                            <div class="my-6 h-px bg-slate-100"></div>
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Cobertura até <strong>R$ 2.000</strong></li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Sorteio R$ 10k</li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Seguro Vida R$ 20k</li>
+                            </ul>
+                            <button
+                                class="w-full py-3 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Contratar
+                                Agora</button>
+                        </div>
+                        <!-- Plan 2 -->
+                        <div
+                            class="border-2 border-blue-500 rounded-[2rem] p-8 shadow-xl bg-white flex flex-col relative transform md:-translate-y-4">
+                            <div
+                                class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider">
+                                MAIS POPULAR</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Conforto</h3>
+                            <p class="text-sm text-slate-500 mb-6">O mais equilibrado.</p>
+                            <div class="text-4xl font-extrabold text-primary mb-1">R$ 39,90<span
+                                    class="text-base font-normal text-muted-foreground">/mês</span></div>
+                            <div class="my-6 h-px bg-slate-100"></div>
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Cobertura até <strong>R$ 4.000</strong></li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Sorteio R$ 10k</li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Seguro Vida R$ 20k</li>
+                            </ul>
+                            <button
+                                class="w-full py-3 rounded-xl bg-primary text-white font-bold hover:opacity-90 transition-all shadow-lg shadow-blue-500/30">Contratar
+                                Agora</button>
+                        </div>
+                        <!-- Plan 3 -->
+                        <div
+                            class="border border-slate-200 rounded-[2rem] p-8 hover:shadow-2xl hover:border-blue-500 transition-all bg-white flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Premium</h3>
+                            <p class="text-sm text-slate-500 mb-6">Para SUVs e Sedans.</p>
+                            <div class="text-4xl font-extrabold text-primary mb-1">R$ 59,90<span
+                                    class="text-base font-normal text-muted-foreground">/mês</span></div>
+                            <div class="my-6 h-px bg-slate-100"></div>
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Cobertura até <strong>R$ 6.000</strong></li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Sorteio R$ 10k</li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Seguro Vida R$ 20k</li>
+                            </ul>
+                            <button
+                                class="w-full py-3 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Contratar
+                                Agora</button>
+                        </div>
+                        <!-- Plan 4 -->
+                        <div
+                            class="border border-slate-200 rounded-[2rem] p-8 hover:shadow-2xl hover:border-blue-500 transition-all bg-white flex flex-col">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Limited</h3>
+                            <p class="text-sm text-slate-500 mb-6">Proteção máxima.</p>
+                            <div class="text-4xl font-extrabold text-primary mb-1">R$ 89,90<span
+                                    class="text-base font-normal text-muted-foreground">/mês</span></div>
+                            <div class="my-6 h-px bg-slate-100"></div>
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Cobertura até <strong>R$ 10.000</strong></li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Sorteio R$ 10k</li>
+                                <li class="text-sm flex items-center gap-2"><i class="fas fa-check text-green-500"></i>
+                                    Seguro Vida R$ 20k</li>
+                            </ul>
+                            <button
+                                class="w-full py-3 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Contratar
+                                Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison Table (New) -->
+            <section class="py-20 px-6 bg-slate-50">
+                <div class="container mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Compare e comprove</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full max-w-4xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden">
+                            <thead>
+                                <tr class="bg-primary text-white">
+                                    <th class="p-6 text-left">Benefício</th>
+                                    <th class="p-6 text-center bg-blue-700">Livre de Franquia</th>
+                                    <th class="p-6 text-center bg-slate-800 text-slate-300">Seguro Comum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-100 text-slate-700">
+                                    <td class="p-6 font-medium">Reembolso 100% da Franquia</td>
+                                    <td class="p-6 text-center bg-blue-50"><i
+                                            class="fas fa-check-circle text-green-500 text-2xl"></i></td>
+                                    <td class="p-6 text-center"><i
+                                            class="fas fa-times-circle text-slate-300 text-2xl"></i></td>
+                                </tr>
+                                <tr class="border-b border-slate-100 text-slate-700">
+                                    <td class="p-6 font-medium">Sorteios Mensais (R$ 10k)</td>
+                                    <td class="p-6 text-center bg-blue-50"><i
+                                            class="fas fa-check-circle text-green-500 text-2xl"></i></td>
+                                    <td class="p-6 text-center"><i
+                                            class="fas fa-times-circle text-slate-300 text-2xl"></i></td>
+                                </tr>
+                                <tr class="border-b border-slate-100 text-slate-700">
+                                    <td class="p-6 font-medium">Indenização Morte Acidental (R$ 20k)</td>
+                                    <td class="p-6 text-center bg-blue-50"><i
+                                            class="fas fa-check-circle text-green-500 text-2xl"></i></td>
+                                    <td class="p-6 text-center"><i
+                                            class="fas fa-times-circle text-slate-300 text-2xl"></i></td>
+                                </tr>
+                                <tr class="text-slate-700">
+                                    <td class="p-6 font-medium">Valor do investimento</td>
+                                    <td class="p-6 text-center bg-blue-50 font-bold text-primary">A partir de R$ 19,90
+                                    </td>
+                                    <td class="p-6 text-center font-bold text-slate-400">Alto custo extra</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trust / Partners -->
+            <section class="py-16 px-6 bg-white border-b border-slate-100">
+                <div class="container mx-auto text-center">
+                    <p class="text-sm font-semibold text-muted-foreground tracking-widest uppercase mb-10 opacity-70">
+                        Garantia e Confiança</p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-shield-alt text-5xl text-blue-600"></i>
+                            <div class="text-left">
+                                <span class="block text-2xl font-bold text-slate-900 tracking-tight">SURA</span>
+                                <span class="block text-sm text-slate-500">Seguradora Garantidora</span>
+                            </div>
+                        </div>
+                        <div class="h-12 w-px bg-slate-200 hidden md:block"></div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-lock text-5xl text-green-500"></i>
+                            <div class="text-left">
+                                <span class="block text-2xl font-bold text-slate-900 tracking-tight">SSL</span>
+                                <span class="block text-sm text-slate-500">Compra 100% Segura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section (New) -->
+            <section id="faq" class="py-20 px-6 bg-slate-50">
+                <div class="container mx-auto max-w-3xl">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Perguntas Frequentes</h2>
+                    <div class="space-y-4">
+                        <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                            <summary
+                                class="p-6 font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
+                                Como funciona o reembolso?
+                                <span class="transition group-open:rotate-180"><i
+                                        class="fas fa-chevron-down text-primary"></i></span>
+                            </summary>
+                            <div class="px-6 pb-6 text-slate-600">
+                                É muito simples. Se você bater o carro, acione seu seguro normalmente. Pague a franquia
+                                para a oficina, pegue a nota fiscal e o comprovante de pagamento. Envie para nós e, após
+                                validação, o reembolso cai na sua conta em até 7 dias úteis.
+                            </div>
+                        </details>
+                        <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                            <summary
+                                class="p-6 font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
+                                Aceita qualquer seguradora?
+                                <span class="transition group-open:rotate-180"><i
+                                        class="fas fa-chevron-down text-primary"></i></span>
+                            </summary>
+                            <div class="px-6 pb-6 text-slate-600">
+                                Sim! O LDF funciona com qualquer seguradora de veículos regulamentada pela SUSEP. Você
+                                não precisa trocar de seguro.
+                            </div>
+                        </details>
+                        <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                            <summary
+                                class="p-6 font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
+                                Tem carência?
+                                <span class="transition group-open:rotate-180"><i
+                                        class="fas fa-chevron-down text-primary"></i></span>
+                            </summary>
+                            <div class="px-6 pb-6 text-slate-600">
+                                A carência é de apenas 30 dias após a contratação. Após esse período, seu bolso já está
+                                protegido contra franquias.
+                            </div>
+                        </details>
+                        <details class="bg-white rounded-2xl shadow-sm border border-slate-200 group">
+                            <summary
+                                class="p-6 font-bold cursor-pointer list-none flex justify-between items-center text-slate-800">
+                                Cobre terceiros?
+                                <span class="transition group-open:rotate-180"><i
+                                        class="fas fa-chevron-down text-primary"></i></span>
+                            </summary>
+                            <div class="px-6 pb-6 text-slate-600">
+                                O LDF reembolsa a SUA franquia (do veículo segurado). Danos a terceiros são cobertos
+                                pela sua apólice de seguro principal, conforme contratado com sua seguradora.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="pt-20 pb-10 px-6 bg-white border-t border-slate-100">
+                <div class="container mx-auto text-center">
+                    <div class="flex items-center justify-center gap-2 mb-8">
+                        <div
+                            class="bg-primary text-white font-bold rounded-lg w-10 h-10 flex items-center justify-center text-xl">
+                            LF</div>
+                        <span class="font-bold text-xl tracking-tight text-slate-900">Livre de Franquia</span>
+                    </div>
+
+                    <p class="text-xl font-medium text-slate-700 mb-8 max-w-lg mx-auto">
+                        Você escolhe: esperar o próximo susto ou <span class="text-primary font-bold">dirigir em
+                            paz</span>.
+                    </p>
+                    <button
+                        class="bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-blue-500/20 hover:opacity-90 transition-all mb-12">
+                        Quero contratar agora
+                    </button>
+
+                    <div class="flex flex-wrap justify-center gap-8 mb-12 text-slate-500 font-medium">
+                        <a href="#" class="hover:text-blue-600 transition-colors">Termos de Uso</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Política de Privacidade</a>
+                        <a href="#" class="hover:text-blue-600 transition-colors">Fale Conosco</a>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 text-sm text-slate-400 mb-4">
+                        <i class="fas fa-lock"></i> Compra 100% Segura
+                    </div>
+
+                    <div class="text-slate-400 text-sm">
+                        <p>&copy; 2024 Livre de Franquia. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
