@@ -146,12 +146,12 @@
                     </ul>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#planos" class="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-gray-900 px-6 sm:px-8 py-4 rounded-full font-bold text-base sm:text-lg transition shadow-xl">
-                            <i class="fas fa-rocket mr-2"></i>
-                            Quero me Proteger
+                            <i class="fas fa-shield-halved mr-2"></i>
+                            Não quero pagar franquia
                         </a>
-                        <a href="#como-funciona" class="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white border-2 border-white/50 px-6 sm:px-8 py-4 rounded-full font-semibold transition">
-                            <i class="fas fa-play-circle mr-2"></i>
-                            Como Funciona
+                        <a href="#planos" class="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white border-2 border-white/50 px-6 sm:px-8 py-4 rounded-full font-semibold transition">
+                            <i class="fas fa-tags mr-2"></i>
+                            Ver planos
                         </a>
                     </div>
                 </div>
@@ -423,10 +423,50 @@
         </div>
     </section>
 
-    <!-- Pricing Plans -->
-    <section id="planos" class="py-20 bg-gray-50">
+    <!-- Diferenciais Section -->
+    <section class="py-10 md:py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-user-check text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">Sem Perfil</h3>
+                        <p class="text-gray-600 text-sm">Não analisamos seu perfil de motorista. Aprovação garantida.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-clock text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">Carência de 5 dias</h3>
+                        <p class="text-gray-600 text-sm">Apenas 5 dias para começar a utilizar o benefício.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-check-circle text-green-600"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-1">Válido para qualquer seguradora</h3>
+                        <p class="text-gray-600 text-sm">Seguro válido para pessoas físicas com apólice ativa em qualquer seguradora ou contrato de locação no seu CPF.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="planos" class="py-12 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                 <span class="inline-block bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <i class="fas fa-tags mr-2"></i>Planos e Preços
                 </span>
@@ -662,41 +702,47 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-gray-900">
+    <section class="py-12 md:py-20 bg-[#2e51a2]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
                 <!-- Texto -->
                 <div class="text-white">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
                         Hoje você pode escolher: esperar o próximo susto ou 
-                        <span class="text-primary-400">dirigir em paz</span>
+                        <span class="text-accent-400">dirigir em paz</span>
                     </h2>
-                    <p class="text-xl text-gray-400 mb-8">
+                    <p class="text-base md:text-xl text-white/80 mb-6 md:mb-8">
                         Junte-se a milhares de motoristas que já descobriram como é bom não se preocupar com a franquia.
                     </p>
                     
                     <!-- Badges -->
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
-                            <i class="fas fa-check text-green-400 mr-2"></i>Reembolso em até 7 dias
+                    <div class="flex flex-wrap gap-2 md:gap-3 mb-6 md:mb-8">
+                        <span class="inline-flex items-center bg-white/10 border border-white/20 text-white px-3 md:px-4 py-2 rounded-full text-xs md:text-sm">
+                            <i class="fas fa-check text-accent-400 mr-2"></i>Reembolso em até 7 dias
                         </span>
-                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
-                            <i class="fas fa-check text-green-400 mr-2"></i>Sem carência
+                        <span class="inline-flex items-center bg-white/10 border border-white/20 text-white px-3 md:px-4 py-2 rounded-full text-xs md:text-sm">
+                            <i class="fas fa-check text-accent-400 mr-2"></i>Sem carência
                         </span>
-                        <span class="inline-flex items-center bg-gray-800 border border-gray-700 text-gray-300 px-4 py-2 rounded-full text-sm">
-                            <i class="fas fa-check text-green-400 mr-2"></i>Sorteios mensais
+                        <span class="inline-flex items-center bg-white/10 border border-white/20 text-white px-3 md:px-4 py-2 rounded-full text-xs md:text-sm">
+                            <i class="fas fa-check text-accent-400 mr-2"></i>Sorteios mensais
                         </span>
                     </div>
                     
-                    <a href="#planos" class="inline-flex items-center justify-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition shadow-xl">
-                        Quero dirigir sem medo
-                        <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4">
+                        <a href="#planos" class="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-gray-900 px-6 md:px-8 py-4 rounded-full font-bold text-base md:text-lg transition shadow-xl">
+                            <i class="fas fa-shield-halved mr-2"></i>
+                            Quero dirigir sem medo
+                        </a>
+                        <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Livre de Franquia" target="_blank" class="inline-flex items-center justify-center bg-accent-500 hover:bg-accent-400 text-gray-900 px-6 md:px-8 py-4 rounded-full font-bold text-base md:text-lg transition shadow-xl">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            Falar com Consultor
+                        </a>
+                    </div>
                 </div>
                 
                 <!-- Imagem -->
                 <div class="relative hidden lg:flex justify-center">
-                    <img src="assets/Gemini_Generated_Image_5o48yc5o48yc5o48(1).jpg" alt="App de seguro" class="rounded-3xl shadow-2xl max-w-md w-full object-cover">
+                    <img src="assets/Gemini_Generated_Image_5o48yc5o48yc5o48(1).jpg" alt="Motorista tranquilo" class="rounded-3xl shadow-2xl max-w-md w-full object-cover">
                 </div>
             </div>
         </div>
@@ -712,13 +758,13 @@
                         O Livre de Franquia é a solução inteligente para você não se preocupar com o valor da franquia do seu seguro auto.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-accent-500 rounded-full flex items-center justify-center transition text-accent-500 hover:text-gray-900">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-accent-500 rounded-full flex items-center justify-center transition text-accent-500 hover:text-gray-900">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-full flex items-center justify-center transition">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-accent-500 rounded-full flex items-center justify-center transition text-accent-500 hover:text-gray-900">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
